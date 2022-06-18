@@ -55,7 +55,6 @@ section {
 
 .timeline_field {
     display: flex;
-    height: 500px;
 }
 
 .left_box_timeline {
@@ -142,9 +141,12 @@ aside {
     justify-content: center;
 }
 
+.aside_field {
+    margin-top: 60px;
+}
+
 .text_aside {
     max-width: 1170px;
-    margin-top: 120px;
 }
 
 .text_aside p {
@@ -164,15 +166,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    background-color: #780707;
 }
 
 .text_footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1170px;
-    height: 30px;
-    background-color: #780707;  
+    padding: 8px; 
 }
 
 .copyright {
@@ -197,4 +199,84 @@ footer {
 
 .copy_text a:hover {
     text-decoration: underline;
+} 
+
+
+
+
+
+@media (max-width: 1120px) {
+
+    .timeline_field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first_box_left, .second_box_left, .third_box_left {
+        margin-bottom: 45px;
+    }
+
+    .right_boxes {
+        background-color: #ffffff;
+    }
+}
+
+
+
+
+
+@media (max-width: 750px) {
+
+    .bio_text {
+        padding: 15px;
+    }
+
+    .text_aside p {
+            padding: 15px;
+            text-align: center;
+        margin-bottom: 2px;
+    }
+}
+
+
+
+
+
+@media (max-width: 550px) {
+    
+    header {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .image_field img {
+        width: 390px;
+        height: 390px;
+    }
+
+    .left_boxes, .right_boxes {
+        margin: 20px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 410px) {
+    
+    .text_field h2 {
+        padding-bottom: 20px;
+    }
+
+    .image_field img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .aside_field {
+        margin-top: 5px;
+    }
 }
